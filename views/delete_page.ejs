@@ -1,0 +1,14 @@
+<%- include("header"); %>
+
+    <%- include("search_form", {path: "/delete_page" });%>
+
+        <%- include("display_searched_student", {studentData}) %>
+
+            <% if(studentData){ %>
+                <form class="delete-form" action="/delete_page/<%= studentData.id%>" method="post" >
+                    <button type="submit">delete</button>
+                </form>
+
+                
+            <% } %>
+                    <%- include("footer") %>

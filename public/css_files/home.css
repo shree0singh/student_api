@@ -1,0 +1,32 @@
+.heading{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.heading > h1{
+    align-self: center;
+}
+
+.field{
+    display:flex;
+    justify-content: center;
+    width: 100%;
+}
+
+ol li{
+    margin: 9px 0px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.legend_box{
+    font-size: x-large;
+}
+
+button{
+    width: fit-content;
+    height: fit-content;
+
+}

@@ -1,0 +1,23 @@
+<fieldset class="new-student">
+    <legend>
+        <h3>new record</h3>
+    </legend>
+    <form action=<%=path %>
+        method="post">
+            <input type="hidden" name="id" value="<%= newId %>">
+        <% if(add){ %>
+
+            <label for="name-input">Enter student's name</label>
+            <input type="text" name="studentName" id="name-input" placeholder="name" required>
+            <label for="department-input">Enter student's department</label>
+            <input type="text" name="studentDepartment" id="department-input" required>
+        <% }else{ %>
+
+            <label for="name-input">Enter student's name</label>
+            <input type="text" name="studentName" id="name-input" placeholder="name">
+            <label for="department-input">Enter student's department</label>
+            <input type="text" name="studentDepartment" id="department-input">
+        <%}%>
+        <button type="submit">submit</button>
+    </form>
+</fieldset>

@@ -1,0 +1,24 @@
+<%- include("header") %>
+    <%- include("table_header"); %>
+
+        <tbody class="students-table-body">
+            <%students.forEach(function(student){%>
+                <tr class="students-table-row">
+                    <td class="students-table-td">
+                        <%= student.id %>
+                    </td>
+                    <td class="students-table-td">
+                        <%= student.name %>
+                    </td>
+                    <td class="students-table-td">
+                        <%= student.department %>
+                    </td>
+                </tr>
+                <%});%>
+        </tbody>
+
+        </table>
+
+
+        </div>
+        <%- include("footer") %>

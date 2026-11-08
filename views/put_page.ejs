@@ -1,0 +1,11 @@
+<%- include("header") %>
+
+    <% if(show){%>
+        <%- include("display_searched_student", {studentData}); %>
+    <% }else{ %>
+        <div class="new-id-display">
+            <h2>new student id available: <%= newId %></h2>
+        </div>
+        <%- include("add_new_student", { add:true, path: "/put", id:newId }) %>
+    <% } %>
+<%- include("footer"); %>

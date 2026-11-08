@@ -1,0 +1,21 @@
+<%- include("table_header"); %>
+    <% if(studentData) {%>
+        <tbody class="students-table-body">
+            <tr class="students-table-row">
+                <td class="students-table-td">
+                    <%= studentData.id %>
+                </td>
+                <td class="students-table-td">
+                    <%= studentData.name %>
+                </td>
+                <td class="students-table-td">
+                    <%= studentData.department %>
+                </td>
+            </tr>
+
+        </tbody>
+    <%}%>
+
+            </table>
+
+            </div>

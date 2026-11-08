@@ -1,0 +1,61 @@
+.table-area {
+    max-height: 65vh;
+    overflow-y: auto;
+    border: 3px solid rgb(44, 19, 118);
+}
+.students-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-family: Arial, sans-serif;
+}
+
+.students-table-th,
+.students-table-td {
+    border: 1px solid #ddd;
+    padding: 8px 12px;
+    text-align: left;
+}
+
+.students-table-th {
+    background-color: #f2f2f2;
+    font-weight: bold;
+}
+
+/* Styles alternating rows automatically as you add more */
+.students-table-body .students-table-row:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+.students-table-body .students-table-row:hover {
+    background-color: #f1f1f1;
+}
+
+.no-match{
+    display: flex;
+    justify-content: center;
+}
+
+.inline{
+    display: inline;
+}
+
+.go-home{
+    margin-top: 20px;
+    display:flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.search-form{
+    margin:10px;
+}
+
+.old_patch{
+    border: 1px solid red;
+
+}
+
+.new-student{
+    border: 2px solid blue;
+}

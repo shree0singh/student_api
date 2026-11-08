@@ -1,0 +1,22 @@
+<%- include("header") %>
+
+<%- include("search_form", {path: "/patch" }) %>
+<% if(studentData){%>
+    <fieldset class="old_patch">
+    <legend>
+    <h3>old record</h3>
+    </legend>
+    <%- include("display_searched_student", {studentData}) %>
+
+    </fieldset>
+
+    <%- include("add_new_student", { add:false, path: "/patch", id:id }) %>
+
+<%} else {%>
+    <div class="no-match">
+    <h2>No student Found!</h2>
+    </div>
+<%}%>
+
+
+<%- include("footer") %>
